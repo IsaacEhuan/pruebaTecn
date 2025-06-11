@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil Profesional</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ef7d601193.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Isaac Ehuan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="inicio" class="header text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="display-4">Isaac Ehuan</h1>
+      <p class="lead">Desarrollador web en formación</p>
+    </div>
+  </header>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <h2 class="text-center seccion-titulo">Proyectos</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card proyecto-card">
+            <img src="imgs\logoVideo.png" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Video Interactivo Sobre SCRUM</h5>
+              <p class="card-text">Una página web el cual se le entregan funciones de js 
+                en el cual, en cierto determinado tiempo, se lanzarán algunas preguntas.</p>
+              <a href="https://github.com/IsaacEhuan/AdminProject" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card proyecto-card">
+            <img src="imgs\Amazon_Web_Services_Logo.svg.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto AWS</h5>
+              <p class="card-text">Proyecto pequeño que contiene un crud con la plataforma AWS.</p>
+              <a href="https://github.com/IsaacEhuan/AWS-Project/tree/master" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card proyecto-card">
+            <img src="imgs\spring-boot-ok.png" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Plantilla Backend</h5>
+              <p class="card-text">Estructura de un proyecto realizado con java y springboot el cual es una
+                plantilla para hacer un crud escolar.</p>
+              <a href="https://github.com/IsaacEhuan/Backend_SDProy" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="seccion-titulo">Habilidades</h2>
+      <div class="row mt-4">
+        <div class="col-6 col-md-3"><i class="fas fa-code fa-2x"></i><p>HTML/CSS</p></div>
+        <div class="col-6 col-md-3"><i class="fab fa-js fa-2x"></i><p>JavaScript</p></div>
+        <div class="col-6 col-md-3"><i class="fab fa-python fa-2x"></i><p>Python</p></div>
+        <div class="col-6 col-md-3"><i class="fas fa-database fa-2x"></i><p>MySQL</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <h2 class="text-center seccion-titulo">Contacto</h2>
+      <form class="mt-4">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom">Enviar</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
